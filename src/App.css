@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
+/* Base styles */
+
+.goodsArea {
+  width: 800px;
+  background-color: bisque;
+  color: blueviolet;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.portfolioArea {
+  width: 800px;
+  background-color:darksalmon;
+  color:darkslateblue;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Portfolio styles */
+
+.portfolioItems {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.portfolioItem {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  width: 200px;
+  height: 200px;
+}
+
+.portfolioFilter {
+  width: 120px;
+  margin: 20px;
+  background-color: deepskyblue;
+  color: brown;
+  border: 2px solid gainsboro;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.portfolioFilterActive {
+  width: 120px;
+  margin: 20px;
+  background-color: rebeccapurple;
+  color: burlywood;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+/* Goods styles */
+
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+.switchButton {
+  margin: 20px;
+  width: 120px;
+  margin-right: 5px;
+  background-color: deepskyblue;
+  color: brown;
+  border: 2px solid gainsboro;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.tilesView {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.listView {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.item {
+  background-color: cadetblue;
+  margin: 10px;
+  padding: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.itemImage {
+  width: 200px;
 }
